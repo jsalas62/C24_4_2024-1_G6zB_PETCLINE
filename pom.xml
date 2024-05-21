@@ -15,7 +15,7 @@
 	<description>PetClinic project for Spring Boot</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 		<org.projectlombok.version>1.18.24</org.projectlombok.version>
 		<org.mapstruct.version>1.5.3.Final</org.mapstruct.version>
 	</properties>
@@ -48,8 +48,10 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<version>1.18.20</version> <!-- Verifica la última versión -->
+			<scope>provided</scope>
 		</dependency>
+
 
 		<!-- mapstruct -->
 		<dependency>
@@ -57,6 +59,13 @@
 			<artifactId>mapstruct</artifactId>
 			<version>${org.mapstruct.version}</version>
 		</dependency>
+
+
+
+
+
+
+
 
 		<!-- h2 -->
 		<dependency>

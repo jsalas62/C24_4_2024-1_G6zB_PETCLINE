@@ -35,6 +35,7 @@ public class OwnerServiceTest {
 
 		assertEquals(EXPECTED_NAME, owner.getFirstName());
 	}
+<<<<<<< HEAD
 
 	@Test
 	public void testGetAllOwners() {
@@ -68,6 +69,8 @@ public class OwnerServiceTest {
 		assertEquals(savedOwner, retrievedOwner);
 	}
 
+=======
+>>>>>>> b45153d3aab76fc8d282a61f1dd1c700b6333239
 	@Test
 	public void testDeleteOwner() {
 		// Crear un nuevo dueño
@@ -111,7 +114,11 @@ public class OwnerServiceTest {
 		// Actualizar el dueño en la base de datos
 		Owner updatedOwner = ownerService.saveOwner(savedOwner);
 
+<<<<<<< HEAD
 		// Obtener el dueño actualizado por su ID
+=======
+		// Obtener sel dueño actualizado por su ID
+>>>>>>> b45153d3aab76fc8d282a61f1dd1c700b6333239
 		Long ownerId = updatedOwner.getId();
 		Owner retrievedOwner = ownerService.getOwnerById(ownerId);
 
@@ -119,6 +126,9 @@ public class OwnerServiceTest {
 		assertEquals(updatedFirstName, retrievedOwner.getFirstName());
 		// Agregar más aserciones según sea necesario para otros campos actualizados
 	}
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> b45153d3aab76fc8d282a61f1dd1c700b6333239
 }
